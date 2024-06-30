@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import app from "./firebase";
+import app_f from "./firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import './App.css'
 
-const auth = getAuth(app);
+const auth = getAuth(app_f);
 
 function App() {
   const [usuario, setUsuario] = useState(null);
