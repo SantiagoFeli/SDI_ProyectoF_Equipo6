@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import app from "./firebase";
+import app_f from "./firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import './App.css'
+import Footer from './components/Footer/Footer';
+import ContactUs from './pages/ContactUs';
 
-const auth = getAuth(app);
+const auth = getAuth(app_f);
 
 function App() {
   const [usuario, setUsuario] = useState(null);
@@ -29,6 +31,7 @@ function App() {
           <Route exact path="/register" element={usuario ? <Navigate to="/" replace />: <Register />} />
           <Route exact path="/LoginAdmin" element={usuario ? <Navigate to="/" replace />: <LoginAdmin/>} />
           <Route exact path="/contactanos" element={<contactanos />} />
+          <Route path="/contact-us" element={<Contactanos />} />
         </Routes>
       </div>
     </Router>

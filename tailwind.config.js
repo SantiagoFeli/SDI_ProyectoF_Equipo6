@@ -9,17 +9,15 @@ export default {
       extend: {
   
         colors: {
-          'custom-yellow': '#F4D06F',
-          'orangehs': '#ff8811', 
-          'creamhs': '#FFF8F0', 
-          'aquahs': '#9DD9D2', 
-          'aqua-darker': '#76a09c', 
+          'white': '#F5F5F5'
         },
   
         fontFamily: {
-          'montserrat': ['Montserrat', 'sans-serif'],
+          'Motley Forces': ['Motley Forces'],
         }
       },
     },
-    plugins: [require('flowbite/plugin')],
+    plugins:[
+      require('flowbite/plugin')
+  ]
   }
