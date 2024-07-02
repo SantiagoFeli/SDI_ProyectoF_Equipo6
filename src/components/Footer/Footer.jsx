@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-links">
-        <Link to="/conocenos">Contact Us</Link>
+        <Link to="/contacto">Contact Us</Link>
       </div>
     </footer>
   );

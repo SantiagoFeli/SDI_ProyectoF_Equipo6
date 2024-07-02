@@ -32,11 +32,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-       
+    
         <Route path="/conocenos" element={<Conocenos />} />
-       
+      
         <Route path="/contacto" element={<Contacto />} />
-       
        
       </Routes>
       <Footer />

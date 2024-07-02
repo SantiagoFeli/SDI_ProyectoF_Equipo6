@@ -7,7 +7,6 @@ import './Contacto.css';
 const Contacto = () => {
   return (
     <div className="contacto">
-      <Navbar />
       <main className="contacto-content">
         <div className="contacto-section">
           <img src= "../assets/LOGO GRANDE 2.png" alt="Caracas Coffee Logo" className="logo" />
@@ -29,7 +28,6 @@ const Contacto = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

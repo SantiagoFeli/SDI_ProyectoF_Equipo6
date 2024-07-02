@@ -7,7 +7,6 @@ import './Conocenos.css';
 const Conocenos = () => {
   return (
     <div className="conocenos">
-      <Navbar />
       <main className="conocenos-content">
         <h1>NOSOTROS</h1>
         <img src="../assets/LOGO GRANDE 1.png" alt="Caracas Coffee Logo" className="logo" />
@@ -28,7 +27,6 @@ const Conocenos = () => {
           inolvidable en el corazón de la universidad.
         </p>
       </main>
-      <Footer />
     </div>
   );
 };
