@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.contacto {
+  background-color: #FFFFFF;
+  color: #582417;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contacto-content {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto-section {
+  margin-bottom: 2rem;
+}
+
+.contacto-section .logo {
+  width: 100px;
+  height: auto;
+}
+
+.contacto-section h1 {
+  font-family: 'Motley Forces', sans-serif;
+  font-size: 2rem;
+  color: #582417;
+  margin: 1rem 0;
+}
+
+.contact-info {
+  font-family: 'Motley Forces', sans-serif;
+  font-size: 1.2rem;
+  color: #F06C0C;
+}
+
+.contact-info span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.map-feedback-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.map-section, .feedback-section {
+  flex: 1;
+  margin: 1rem;
+}
+
+.map-section h2, .feedback-section h2 {
+  font-family: 'Motley Forces', sans-serif;
+  font-size: 1.5rem;
+  color: #582417;
+  margin-bottom: 1rem;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000000;
+}
+
+.map-section p, .feedback-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.feedback-input {
+  width: 100%;
+  height: 100px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  border: 1px solid #582417;
+  border-radius: 4px;
+}
