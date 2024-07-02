@@ -1,25 +1,29 @@
 import React from 'react';
-import './Footer.css';
-import { FaInstagram, FaTiktok, FaYoutube, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="social-media">
+      <div className="footer-social">
         <h2>SÍGUENOS EN</h2>
-        <div className="icons">
-          <FaTwitter className="icon" />
-          <FaInstagram className="icon" />
-          <FaTiktok className="icon" />
-          <FaYoutube className="icon" />
+        <div className="social-icons">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/path/to/twitter-icon.png" alt="Twitter" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/path/to/instagram-icon.png" alt="Instagram" />
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+            <img src="/path/to/tiktok-icon.png" alt="TikTok" />
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="/path/to/youtube-icon.png" alt="YouTube" />
+          </a>
         </div>
       </div>
-      <div className="links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <Link to="/contact-us">Contact Us</Link>
-        <a href="#">Mobile App</a>
+      <div className="footer-links">
+        <Link to="/conocenos">Contact Us</Link>
       </div>
     </footer>
   );

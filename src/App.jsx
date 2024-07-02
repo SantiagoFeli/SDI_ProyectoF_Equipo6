@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import app_f from "./firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import './App.css'
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Menu from './pages/Menu';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+//import Menu from './pages/Menu';
 import Conocenos from './pages/Conocenos';
-import Pedido from './pages/Pedido';
+//import Pedido from './pages/Pedido';
 import Contacto from './pages/Contacto';
-import IniciarSesion from './pages/IniciarSesion';
-import Registrarse from './pages/Registrarse';
-import Home from './pages/Home';
+//import IniciarSesion from './pages/IniciarSesion';
+//import Registrarse from './pages/Registrarse';
+//import Home from './pages/Home';
 
 const auth = getAuth(app_f);
 
@@ -32,13 +32,12 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+       
         <Route path="/conocenos" element={<Conocenos />} />
-        <Route path="/pedido" element={<Pedido />} />
+       
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/iniciar-sesion" element={<IniciarSesion />} />
-        <Route path="/registrarse" element={<Registrarse />} />
+       
+       
       </Routes>
       <Footer />
     </Router>
