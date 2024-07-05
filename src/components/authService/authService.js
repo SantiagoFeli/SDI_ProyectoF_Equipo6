@@ -16,3 +16,4 @@ export const signInWithFacebook = async () => {
 export const signInWithEmail = async (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
 };
+
