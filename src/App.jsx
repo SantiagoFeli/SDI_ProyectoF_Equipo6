@@ -12,6 +12,7 @@ import Contacto from './pages/Contacto';
 import IniciarSesion from './pages/IniciarSesion';
 import Registrarse from './pages/Registrarse';
 import Home from './pages/Home';
+import Login from './pages/Login';
 
 const auth = getAuth(app_f);
 
