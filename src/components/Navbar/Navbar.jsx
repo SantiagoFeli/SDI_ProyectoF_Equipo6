@@ -1,29 +1,26 @@
 import React from 'react';
-import './Navbar.css';
-import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png'; // Asegúrate de tener la imagen del logo en la carpeta adecuada
+import './Navbar.css';
+
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <Link to="/Menú" className="nav-link">MENÚ</Link>
-        <Link to="/Conócenos" className="nav-link">CONÓCENOS</Link>
-      </div>
-      <div className="navbar-center">
-        <Link to="/">
-          <img src={logo} alt="Caracas Coffee" className="navbar-logo" />
-        </Link>
-      </div>
-      <div className="navbar-right">
-        <Link to="/Pedido" className="nav-link">PEDIDO</Link>
-        <Link to="/Contacto" className="nav-link">CONTACTO</Link>
-        <Button text="Iniciar Sesión" className="login" onClick={() => { /* Lógica para iniciar sesión */ }} />
-        <Button text="Regístrate" className="register" onClick={() => { /* Lógica para registrarse */ }} />
+      <ul className="navbar-menu">
+        <li><Link to="/menu">MENÚ</Link></li>
+        <li><Link to="/conocenos">CONÓCENOS</Link></li>
+        <li className="navbar-logo"><Link to="/"><img src="../../assets/400X112 2.png" alt="Caracas Coffee Logo" /></Link></li>
+        <li><Link to="/pedido">PEDIDO</Link></li>
+        <li><Link to="/contacto">CONTACTO</Link></li>
+      </ul>
+      <div className="navbar-buttons">
+        <Link to="/iniciar-sesion" className="btn btn-outline">iniciar sesión</Link>
+        <Link to="/registrarse" className="btn btn-primary">regístrate</Link>
       </div>
     </nav>
   );
 };
+
+export default Navbar;
 
 export default Navbar;
