@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import './Contacto.css';
 import fotico from './../assets/LOGO GRANDE 2.png';
 
+
 const Contacto = () => {
   return (
     <div className="contacto">
