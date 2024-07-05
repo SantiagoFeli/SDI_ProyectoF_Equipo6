@@ -10,7 +10,7 @@ import Conocenos from './pages/Conocenos';
 import Pedido from './pages/Pedido';
 import Contacto from './pages/Contacto';
 import Login from './pages/Login';
-//import Registrarse from './pages/Registrarse';
+//import Register from './pages/register';
 //import Home from './pages/Home';
 
 const auth = getAuth(app_f);
@@ -37,7 +37,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/login" element={<Login />} />
         <Route path="/pedido" element={<Pedido />} />
-   
+     
       </Routes>
       <Footer />
     </Router>

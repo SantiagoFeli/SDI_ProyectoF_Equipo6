@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
 import Google from "../components/Google";
-import register from "./register.css";
+import "./register.css";
 
 
 
