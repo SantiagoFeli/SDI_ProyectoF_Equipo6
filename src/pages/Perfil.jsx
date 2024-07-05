@@ -6,7 +6,6 @@ import './UserProfile.css';
 
 
 const Perfil = () => {
-  // Declaración de useState fuera de cualquier bloque condicional
   const [user, setUser] = useState(null);
 
   useEffect(() => {
