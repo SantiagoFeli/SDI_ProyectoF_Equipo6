@@ -1,8 +1,8 @@
 import React from 'react';
 import './Navbar.css';
-import Button from './Button';
+import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png'; // Asegúrate de tener la imagen del logo en la carpeta adecuada
+import logo from '../../assets/logo.png'; // Asegúrate de tener la imagen del logo en la carpeta adecuada
 
 const Navbar = () => {
   return (
