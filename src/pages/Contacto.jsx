@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import './Contacto.css';
 
 
+
 const Contacto = () => {
   return (
     <div className="contacto">
