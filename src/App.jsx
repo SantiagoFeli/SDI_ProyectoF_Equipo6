@@ -9,7 +9,7 @@ import Menu from './pages/Menu';
 import Conocenos from './pages/Conocenos';
 //import Pedido from './pages/Pedido';
 import Contacto from './pages/Contacto';
-//import IniciarSesion from './pages/IniciarSesion';
+import Login from './pages/Login';
 //import Registrarse from './pages/Registrarse';
 //import Home from './pages/Home';
 
@@ -32,9 +32,10 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Menu />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/conocenos" element={<Conocenos />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/iniciar-sesion" element={<Login />} />
    
       </Routes>
       <Footer />
