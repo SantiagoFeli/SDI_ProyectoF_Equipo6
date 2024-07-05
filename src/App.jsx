@@ -5,7 +5,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import './App.css'
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-//import Menu from './pages/Menu';
+import Menu from './pages/Menu';
 import Conocenos from './pages/Conocenos';
 //import Pedido from './pages/Pedido';
 import Contacto from './pages/Contacto';
@@ -32,9 +32,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-       
+        <Route path="/" element={<Menu />} />
         <Route path="/conocenos" element={<Conocenos />} />
-     
         <Route path="/contacto" element={<Contacto />} />
    
       </Routes>
