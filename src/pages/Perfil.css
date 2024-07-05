@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profilePictureContainer {
+    margin-bottom: 20px;
+  }
+  
+  .profilePicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .fieldContainer {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0ad4e;
+    border: none;
+    border-radius: 5px;
+  }
