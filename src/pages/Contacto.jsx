@@ -2,14 +2,14 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import './Contacto.css';
-
+import fotico from './../assets/LOGO GRANDE 2.png';
 
 const Contacto = () => {
   return (
     <div className="contacto">
       <main className="contacto-content">
         <div className="contacto-section">
-          <img src= "../assets/LOGO GRANDE 2.png" alt="Caracas Coffee Logo" className="logo" />
+          <img src= {fotico} alt="Caracas Coffee Logo" className="logo" />
           <h1>CONTÁCTANOS</h1>
           <p className="contact-info"><strong>CORREO ELECTRÓNICO:</strong> <span>CcsCoffeeBar@gmail.com</span></p>
           <p className="contact-info"><strong>NÚMERO DEL LOCAL:</strong> <span>0212152351</span></p>
