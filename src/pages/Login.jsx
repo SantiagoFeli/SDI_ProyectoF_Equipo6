@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
-import { signInWithGoogle, signInWithFacebook, signInWithEmail } from '../../services/authService';
-import { UserContext } from '../../Controllers/UserContext';
-import glogo from '../../assets/google-logo.png';  // Add the actual path for google logo
-import flogo from '../../assets/facebook-logo.png'; // Add the actual path for facebook logo
-import AuthButton from '../../Components/AuthButton';
-import LoadingSpinner from '../../Components/LoadingSpinner';
+import { signInWithGoogle, signInWithFacebook, signInWithEmail } from '../components/authService/authService.js';
+import { UserContext } from '../components/UserContext.js';
+import glogo from './../assets/google-logo.png';  // Add the actual path for google logo
+import flogo from './../assets/facebook-logo.png'; // Add the actual path for facebook logo
+import AuthButton from '../components/AuthButton/AuthButton.jsx';
+import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner.jsx';
 
 const Login = () => {
     const { setUser } = useContext(UserContext);

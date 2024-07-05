@@ -1,7 +1,7 @@
 import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
-import appFirebase from '../../credenciales';
+import app_f from "../../firebase";
 
-const auth = getAuth(appFirebase);
+const auth = getAuth(app_f);
 
 export const signInWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
