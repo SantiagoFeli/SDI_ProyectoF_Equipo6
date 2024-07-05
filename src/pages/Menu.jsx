@@ -1,5 +1,3 @@
-// src/Menu.js
-import React from 'react';
 import './Menu.css';
 import frozenDrink from './../assets/MenuFroozenDrinks.png';
 import donuts from './../assets/MenuDonuts.png';
