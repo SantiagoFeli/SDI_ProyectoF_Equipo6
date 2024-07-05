@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Motley Forces';
+  src: url('/path/to/motley-forces.woff2') format('woff2'),
+       url('/path/to/motley-forces.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contacto {
+  font-family: 'Motley Forces', sans-serif;
+  color: #582417;
+  padding: 20px;
+  text-align: center;
+}
+
+.contacto h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #1F516D;
+}
+
+.contacto-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.contacto-info {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+  border-right: 2px solid #582417;
+}
+
+.contacto-info img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.contacto-info h2 {
+  font-size: 24px;
+  color: #582417;
+}
+
+.contacto-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contacto-mapa-feedback {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.contacto-mapa {
+  margin-bottom: 20px;
+}
+
+.contacto-mapa h2, .contacto-feedback h2 {
+  font-size: 24px;
+  color: #582417;
+}
+
+.contacto-mapa p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.contacto-feedback p {
+  font-size: 18px;
+}
+
+.contacto-feedback textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #582417;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #1F516D;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+footer .social-media-icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+footer nav {
+  margin-top: 10px;
+}
+
+footer nav a {
+  color: #FFFFFF;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+

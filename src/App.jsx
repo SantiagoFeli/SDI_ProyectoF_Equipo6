@@ -1,10 +1,19 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import app from "./firebase";
+import app_f from "./firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import './App.css'
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Menu from './pages/Menu';
+import Conocenos from './pages/Conocenos';
+import Pedido from './pages/Pedido';
+import Contacto from './pages/Contacto';
+import Login from './pages/Login';
+//import Register from './pages/register';
+//import Home from './pages/Home';
 
-const auth = getAuth(app);
+const auth = getAuth(app_f);
 
 function App() {
   const [usuario, setUsuario] = useState(null);
@@ -21,16 +30,16 @@ function App() {
   return (
 
     <Router>
-      <div className="App">
-        <Routes>
-          <Route exact path="/" element={<Home correoUsuario={usuario ? usuario.email : null}/>} />
-          {/* <Route exact path="/menu" element={<Menu />} /> */}
-          <Route exact path="/login" element={usuario ? <Navigate to="/" replace />: <Login />} />
-          <Route exact path="/register" element={usuario ? <Navigate to="/" replace />: <Register />} />
-          <Route exact path="/LoginAdmin" element={usuario ? <Navigate to="/" replace />: <LoginAdmin/>} />
-          <Route exact path="/contactanos" element={<contactanos />} />
-        </Routes>
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/conocenos" element={<Conocenos />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/pedido" element={<Pedido />} />
+     
+      </Routes>
+      <Footer />
     </Router>
   );
 }

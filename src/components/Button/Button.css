@@ -1,0 +1,45 @@
+.custom-button {
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .custom-button.register {
+    background-color: #1F516D; /* Background color for register */
+    color: #FFF9F9; /* Text color for register */
+  }
+  
+  .custom-button.register:hover {
+    background-color: #174252; /* Darker shade on hover for register */
+  }
+  
+  .custom-button.login {
+    background-color: #FFFFFF; /* Background color for login */
+    color: #582417; /* Text color for login */
+    border: 2px solid #582417; /* Border color for login */
+  }
+  
+  .custom-button.login:hover {
+    background-color: #f2f2f2; /* Lighter background on hover for login */
+  }
+  
+  .custom-button:active {
+    transform: scale(0.95); /* Slightly reduce size on click */
+  }
+  
+  .custom-button:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 3px rgba(31, 81, 109, 0.5); /* Add shadow for accessibility */
+  }
+  
+  @media (max-width: 768px) {
+    .custom-button {
+      width: 100%; /* Full width on small screens */
+      padding: 15px 0; /* Adjust padding for better touch target */
+    }
+  }
+  
