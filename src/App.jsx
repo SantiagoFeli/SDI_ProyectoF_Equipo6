@@ -32,13 +32,11 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+       
         <Route path="/conocenos" element={<Conocenos />} />
-        <Route path="/pedido" element={<Pedido />} />
+     
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/iniciar-sesion" element={<IniciarSesion />} />
-        <Route path="/registrarse" element={<Registrarse />} />
+   
       </Routes>
       <Footer />
     </Router>
