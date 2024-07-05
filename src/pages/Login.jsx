@@ -74,7 +74,7 @@ const Login = () => {
         }
     };
 
-    return (
+   return (
         <div className="mainContainer">
             <div className="titleContainer">
                 <div>INICIO DE SESIÓN</div>
