@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  h1, h2, h3 {
+    color: #7a4419;
+  }
+  
+  p {
+    color: #333;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .option {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  button {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff6600;
+  }
+  
+  .details {
+    margin-top: 20px;
+  }
+  
+  .ingredients, .nutrition {
+    margin-top: 10px;
+  }
+  
+  .order-button {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .order-button:hover {
+    background-color: #ff6600;
+  }
+  
+  .coffee-image {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+  }
