@@ -1,16 +1,48 @@
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import React, { useEffect, useState } from "react";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 import app_firebase from "../credentials";
 import './UserProfile.css';
 
 
 const Perfil = () => {
-    const [user, setUser] = useState({
-        nombre: 'Angel',
-        apellido: 'García',
-        email: 'angel@gmail.com',
-        telefono: '04144578953',
-      });
+  // Declaración de useState fuera de cualquier bloque condicional
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const auth = getAuth(app_firebase);
+    const db = getFirestore(app_firebase);
+
+    const fetchUserData = async (firebaseUser) => {
+      try {
+        const userDocRef = doc(db, "users", firebaseUser.uid);
+        const userDoc = await getDoc(userDocRef);
+        if (userDoc.exists()) {
+          setUser({ uid: firebaseUser.uid, ...userDoc.data() });
+        } else {
+          console.log("No se encontraron datos del usuario.");
+        }
+      } catch (error) {
+        console.error("Error al obtener datos del usuario:", error);
+      }
+    };
+
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      if (firebaseUser) {
+        fetchUserData(firebaseUser);
+      } else {
+        setUser(null);
+      }
+    });
+
+    return () => unsubscribe(); 
+  }, []);
+
+  if (!user) {
+    return <div>Cargando...</div>;
+  }
+    });
+   
     
       return (
         <div style={styles.container}>
