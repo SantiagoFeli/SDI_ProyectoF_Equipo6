@@ -1,12 +1,12 @@
 // src/Menu.js
 import React from 'react';
 import './Menu.css';
-import frozenDrink from '../assets/images/MenuFroozenDrinks.png';
-import donuts from '../assets/images/MenuDonuts.png';
-import breakfast from '../assets/images/MenuBreakfast.png';
-import cocodBrew from '../assets/images/MenuCocodBrews.png';
-import coffee from '../assets/images/MenuCoffe.png';
-import promos from '../assets/images/MenuPromos.png';
+import frozenDrink from './../assets/MenuFroozenDrinks.png';
+import donuts from './../assets/MenuDonuts.png';
+import breakfast from './../assets/MenuBreakfast.png';
+import cocodBrew from './../assets/MenuCocoBrews.png';
+import coffee from './../assets/MenuCoffee.png';
+import promos from './../assets/MenuPromos.png';
 
 const MenuItem = ({ image, label }) => (
   <div className="menu-item">
