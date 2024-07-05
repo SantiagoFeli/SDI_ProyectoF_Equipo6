@@ -2,15 +2,14 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import './Conocenos.css';
-import logo from '../assets/LOGO_GRANDE_1.png';
+
 
 const Conocenos = () => {
   return (
     <div className="conocenos">
-      <Navbar />
       <main className="conocenos-content">
         <h1>NOSOTROS</h1>
-        <img src={logo} alt="Caracas Coffee Logo" className="logo" />
+        <img src="../assets/LOGO GRANDE 1.png" alt="Caracas Coffee Logo" className="logo" />
         <p>
           Caracas Coffee abrió sus puertas en el año 2024 dentro de la Universidad Metropolitana, 
           con el objetivo de ofrecer a los estudiantes una experiencia de café excepcional.
@@ -28,7 +27,6 @@ const Conocenos = () => {
           inolvidable en el corazón de la universidad.
         </p>
       </main>
-      <Footer />
     </div>
   );
 };
