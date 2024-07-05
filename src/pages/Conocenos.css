@@ -1,34 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Motley Forces';
+  src: url('/path/to/motley-forces.woff2') format('woff2'),
+       url('/path/to/motley-forces.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-.conocenos {
+.conocenos-container {
+  padding: 2rem;
   background-color: #FFFFFF;
-  color: #582417;
+  text-align: center;
+  position: relative;
+}
+
+.conocenos-title {
   font-family: 'Motley Forces', sans-serif;
+  font-size: 5rem; /* Tamaño más grande */
+  color: #C25410;
+  margin-bottom: 2rem;
+  text-align: center; /* Centra el título */
+}
+
+.conocenos-header {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.conocenos-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(5%, -20%);
+}
+
+.conocenos-logo img {
+  height: 350px; /* Ajusta la altura del logo */
+  width: auto; /* Mantén la proporción del logo */
 }
 
 .conocenos-content {
-  flex: 1;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.conocenos-content h1 {
-  color: #C25410;
-  font-size: 2.5rem;
-  font-weight: 700;
+.conocenos-text {
+  font-family: 'Motley Forces', sans-serif;
+  color: #582417;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 60%; /* Ajusta el ancho del texto */
+  margin: 0 auto;
 }
 
-.conocenos-content p {
-  margin: 1rem 0;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-
-.logo {
-  margin: 2rem 0;
-  width: 100px;
-  height: auto;
+.conocenos-text p {
+  margin-bottom: 1rem; /* Ajusta el margen entre párrafos */
 }
