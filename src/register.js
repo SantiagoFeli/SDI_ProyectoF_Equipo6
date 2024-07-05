@@ -3,6 +3,7 @@ import { auth, db } from "./firebase";
 import React, { useState } from "react";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import Google from "./components/Google";
 
 
 
@@ -122,6 +123,8 @@ function Register() {
           <p className="forgot-password text-right">
             Ya se encuentra registrado <a href="/login">Iniciar sesión</a>
           </p>
+          <Google/>
+
 
         </form>
       );
