@@ -1,27 +1,26 @@
 import React from 'react';
-import './Navbar.css';
-import Button from './Button';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png'; // Asegúrate de tener la imagen del logo en la carpeta adecuada
+import './Navbar.css';
+import logo from '../../assets/400X112_2.png'; // Asegúrate de tener la ruta correcta al archivo de imagen
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-left">
-        <Link to="/Menú" className="nav-link">MENÚ</Link>
-        <Link to="/Conócenos" className="nav-link">CONÓCENOS</Link>
+      <div className="navbar-buttons">
+        <Link to="/iniciar-sesion" className="btn btn-outline">INICIAR SESIÓN</Link>
+        <Link to="/registrarse" className="btn btn-primary">REGÍSTRATE</Link>
       </div>
-      <div className="navbar-center">
-        <Link to="/">
-          <img src={logo} alt="Caracas Coffee" className="navbar-logo" />
-        </Link>
+      <div className="navbar-divider"></div>
+      <div className="navbar-menu-container">
+        <ul className="navbar-menu">
+          <li><Link to="/menu">MENÚ</Link></li>
+          <li><Link to="/conocenos">CONÓCENOS</Link></li>
+          <li className="navbar-logo"><Link to="/"><img src={logo} alt="Caracas Coffee Logo" /></Link></li>
+          <li><Link to="/pedido">PEDIDO</Link></li>
+          <li><Link to="/contacto">CONTACTO</Link></li>
+        </ul>
       </div>
-      <div className="navbar-right">
-        <Link to="/Pedido" className="nav-link">PEDIDO</Link>
-        <Link to="/Contacto" className="nav-link">CONTACTO</Link>
-        <Button text="Iniciar Sesión" className="login" onClick={() => { /* Lógica para iniciar sesión */ }} />
-        <Button text="Regístrate" className="register" onClick={() => { /* Lógica para registrarse */ }} />
-      </div>
+      <div className="navbar-bottom-line"></div>
     </nav>
   );
 };

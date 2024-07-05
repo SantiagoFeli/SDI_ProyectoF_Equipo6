@@ -12,9 +12,21 @@ function Register() {
     const [fname, setFname] = useState("");
     const [lname, setLname] = useState("");
     const [tlf, setTlf] = useState("");
+    const [error, setError] = useState(null);
 
+    const validarCorreo = (correo) => {
+      const regex = /@unimet\.edu\.ve$/;
+      return regex.test(correo);
+  };
+    
     const handleRegister = async (e) => {
         e.preventDefault();
+        if (!validarCorreo(email)) {
+          setError('Por favor, ingresa un correo electrónico válido de @unimet.edu.ve');
+          return; 
+
+
+      }
         try {
             const userCredential = await createUserWithEmailAndPassword(
             auth,
@@ -104,11 +116,12 @@ function Register() {
             <button type="submit" className="btn btn-primary">
               Registrarse
             </button>
+            {error && <div style={{ color: 'red' }}>{error}</div>}
+
           </div>
           <p className="forgot-password text-right">
             Ya se encuentra registrado <a href="/login">Iniciar sesión</a>
           </p>
-
 
         </form>
       );
