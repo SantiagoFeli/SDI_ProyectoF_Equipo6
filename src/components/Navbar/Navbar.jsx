@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../../assets/400X112_2.png'; // Asegúrate de tener la ruta correcta al archivo de imagen
+import logo from '../../assets/400X112 2.png'; // Asegúrate de tener la ruta correcta al archivo de imagen
 
 const Navbar = () => {
   return (
