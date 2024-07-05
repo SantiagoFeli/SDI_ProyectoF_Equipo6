@@ -1,85 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-.contacto {
-  background-color: #FFFFFF;
-  color: #582417;
-  font-family: 'Motley Forces', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Motley Forces';
+  src: url('/path/to/motley-forces.woff2') format('woff2'),
+       url('/path/to/motley-forces.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.contacto-content {
-  flex: 1;
-  padding: 2rem;
+.contacto {
+  font-family: 'Motley Forces', sans-serif;
+  color: #582417;
+  padding: 20px;
   text-align: center;
 }
 
-.contacto-section {
-  margin-bottom: 2rem;
+.contacto h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #1F516D;
 }
 
-.contacto-section .logo {
-  width: 100px;
-  height: auto;
-}
-
-.contacto-section h1 {
-  font-family: 'Motley Forces', sans-serif;
-  font-size: 2rem;
-  color: #582417;
-  margin: 1rem 0;
-}
-
-.contact-info {
-  font-family: 'Motley Forces', sans-serif;
-  font-size: 1.2rem;
-  color: #F06C0C;
-}
-
-.contact-info span {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: #000000;
-}
-
-.map-feedback-section {
+.contacto-content {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 0;
 }
 
-.map-section, .feedback-section {
+.contacto-info {
   flex: 1;
-  margin: 1rem;
+  text-align: left;
+  padding-right: 20px;
+  border-right: 2px solid #582417;
 }
 
-.map-section h2, .feedback-section h2 {
-  font-family: 'Motley Forces', sans-serif;
-  font-size: 1.5rem;
+.contacto-info img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.contacto-info h2 {
+  font-size: 24px;
   color: #582417;
-  margin-bottom: 1rem;
 }
 
-.map {
-  width: 100%;
-  height: auto;
-  border: 1px solid #000000;
+.contacto-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.map-section p, .feedback-section p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  color: #000000;
+.contacto-mapa-feedback {
+  flex: 2;
+  padding-left: 20px;
 }
 
-.feedback-input {
+.contacto-mapa {
+  margin-bottom: 20px;
+}
+
+.contacto-mapa h2, .contacto-feedback h2 {
+  font-size: 24px;
+  color: #582417;
+}
+
+.contacto-mapa p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.contacto-feedback p {
+  font-size: 18px;
+}
+
+.contacto-feedback textarea {
   width: 100%;
   height: 100px;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
   border: 1px solid #582417;
-  border-radius: 4px;
+  border-radius: 5px;
 }
+
+footer {
+  margin-top: 40px;
+  background-color: #1F516D;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+}
+
+footer .social-media-icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+footer nav {
+  margin-top: 10px;
+}
+
+footer nav a {
+  color: #FFFFFF;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
