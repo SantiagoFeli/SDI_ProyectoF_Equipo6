@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import './Contacto.css';
-import fotico from './../assets/LOGO GRANDE 2.png';
+import fotico from './../assets/LOGO_GRANDE_2.png';
 
 
 const Contacto = () => {

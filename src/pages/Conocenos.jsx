@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import './Conocenos.css';
-import fotico from './../assets/LOGO GRANDE 1.png';
+import fotico from './../assets/LOGO_GRANDE_1.png';
 
 const Conocenos = () => {
   return (
