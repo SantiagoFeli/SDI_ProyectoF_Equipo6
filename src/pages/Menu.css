@@ -1,0 +1,45 @@
+
+.menu-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #5a3729;
+  }
+  
+  .menu-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    background-color: #f2e6e6;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .menu-label {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #b87943;
+  }
+  
