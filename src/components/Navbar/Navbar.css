@@ -8,33 +8,60 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
   background-color: #FFFFFF;
   border-bottom: 1px solid #582417;
+}
+
+.navbar-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 2rem 0 0;
+}
+
+.navbar-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #582417;
+  margin-top: 0.5rem;
+}
+
+.navbar-menu-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos del menú */
+  align-items: center;
+  width: 100%;
+  padding: 1rem 4rem; /* Aumenta el padding para dar más espacio a los bordes */
 }
 
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 10rem; /* Ajusta el espacio entre los elementos */
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-menu li {
   font-family: 'Motley Forces', sans-serif;
   font-weight: bold;
   color: #582417;
+  text-transform: uppercase;
+  font-size: 1.2rem; /* Agranda el tamaño de la fuente */
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
-  font-family: 'Motley Forces', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem; /* Añade espacio a los lados del logo */
 }
 
 .navbar-logo img {
-  width: 100px;
-  height: auto;
+  height: 60px; /* Ajusta la altura según sea necesario */
 }
 
 .navbar-menu li a {
@@ -46,14 +73,9 @@
   color: #1F516D;
 }
 
-.navbar-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
 .btn {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  padding: 0.5rem 1.5rem; /* Aumenta el padding horizontal para hacer los botones más largos */
+  border-radius: 25px; /* Hacer los botones redondeados */
   font-family: 'Motley Forces', sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -73,9 +95,17 @@
 .btn-primary {
   background-color: #1F516D;
   color: #FFFFFF;
-  border: none;
+  border: 2px solid #1F516D
 }
 
 .btn-primary:hover {
-  background-color: #163B4D;
+  border: 2px solid #1F516D;
+  background-color: #FFFFFF;
+  color: #1F516D
+}
+
+.navbar-bottom-line {
+  width: 100%;
+  height: 35px; /* Ajusta el grosor según sea necesario */
+  background-color: #1F516D;
 }
