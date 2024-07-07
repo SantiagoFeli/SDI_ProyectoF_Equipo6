@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-buttons">
         <Link to="/login" className="btn btn-outline">INICIAR SESIÓN</Link>
-        <Link to="/regis" className="btn btn-primary">REGÍSTRATE</Link>
+        <Link to="/register" className="btn btn-primary">REGÍSTRATE</Link>
       </div>
       <div className="navbar-divider"></div>
       <div className="navbar-menu-container">
