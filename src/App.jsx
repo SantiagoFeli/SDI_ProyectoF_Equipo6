@@ -10,7 +10,7 @@ import Conocenos from './pages/Conocenos';
 import Pedido from './pages/Pedido';
 import Contacto from './pages/Contacto';
 import Login from './pages/Login';
-//import Register from './pages/register';
+import Register from "./pages/Register";
 //import Home from './pages/Home';
 
 const auth = getAuth(app_f);
@@ -36,6 +36,7 @@ function App() {
         <Route path="/conocenos" element={<Conocenos />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/pedido" element={<Pedido />} />
      
       </Routes>
