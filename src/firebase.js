@@ -1,13 +1,12 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getStorage } from "firebase/storage";
-import { getFirestore } from "firebase/firestore";
-import { GoogleAuthProvider, getAuth } from "firebase/auth";
-//import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// Corrected exports in firebase.js
 
-// Your web app's Firebase configuration
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+import { GoogleAuthProvider } from "firebase/auth";
+
 const firebaseConfig = {
   apiKey: "AIzaSyB6R2asZLMMudDYEb-lp1pGjIgPoOQrATo",
   authDomain: "sdi-proyectof-equipo6.firebaseapp.com",
@@ -19,13 +18,15 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app_f = initializeApp(firebaseConfig);
-export const firestore = getFirestore(app_f);
-const storage = getStorage(app_f);
-const auth = getAuth(app_f);
 
-export default app_f; firestore; storage; auth;
+// Correctly export using named exports
+export const db = getFirestore(app_f); // Assuming you want to use 'db' as the name when importing
+export const storage = getStorage(app_f);
+export const auth = getAuth(app_f);
+export const googleProvider = new GoogleAuthProvider();
+googleProvider.setCustomParameters({ prompt: 'select_account' });
+googleProvider.addScope('profile');
+googleProvider.addScope('email');
 
-export const googleProvider = new GoogleAuthProvider()
-googleProvider.setCustomParameters({ prompt: 'select_account' })
-googleProvider.addScope('profile')
-googleProvider.addScope('email')
+// If you need a default export, choose what's most appropriate to be the default
+export default app_f;
